@@ -15,10 +15,13 @@
 /* Global Styles */
 body {
     font-family: var(--font-primary);
+    color: var(--color-text);
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--font-secondary);
+    color: var(--color-text);
 }
+
+/* Header Styles */
