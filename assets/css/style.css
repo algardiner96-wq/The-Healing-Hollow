@@ -22,7 +22,12 @@ body {
 h1,
 h2 {
     font-family: var(--font-secondary);
-    color: var(--color-text);
+    color: #3e5c48;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    padding-top: 4rem; /* prevents navbar overlap */
 }
 
 /*navbar styles */
@@ -39,6 +44,25 @@ h2 {
     color: var(--color-accent);
 }
 
+/* Hero section styles */
+.hero {
+    background-image: url("/assets/images/the-healing-hollow-hero.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(74, 108, 92, 0.5);
+    min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position: relative;
+}
+#header {
+    font-weight: 500;
+}
+.header p {
+    color: var(--color-text);
+}
 /* Footer styles */
 footer {
     background-color: var(--color-primary);
