@@ -84,13 +84,18 @@
             <div class="container">
                 <div class="row text-center">
                     <!-- Stress Card -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0">
+                    <div class="col-md-4 mb-4 ">
+                        <div class="card h-100 shadow-sm border-0 mental-card">
                             <div class="card-body">
                                 <h3 class="card-title">Stress</h3>
-                                <p class="card-text">Learn how stress affects the body and mind, and explore gentle ways
+                                <p class="card-text short">Learn how stress affects the body and mind, and explore
+                                    gentle ways
                                     to manage it.</p>
-                                <a href="#stress" class="btn btn-pastel">Read More</a>
+                                <p class="card-text more">
+                                    Stress is a natural reaction to life’s demands. When it builds up, it can affect
+                                    your mood, sleep, and focus. Simple routines like breathing exercises and rest can
+                                    help ease the pressure.</p>
+                                <button class="btn btn-pastel btn-toggle" data-target="stress">Read more</button>
                             </div>
                         </div>
                     </div>
@@ -98,24 +103,32 @@
 
                     <!-- Anxiety Card -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0">
+                        <div class="card h-100 shadow-sm border-0 mental-card">
                             <div class="card-body">
                                 <h3 class="card-title">Anxiety</h3>
                                 <p class="card-text">Understand the signs of anxiety and discover calming techniques to
                                     ease your thoughts.</p>
-                                <a href="#anxiety" class="btn btn-pastel">Read More</a>
+                                <p class="card-text more">
+                                    Anxiety can feel like racing thoughts or a tight chest. It’s common—and manageable.
+                                    Techniques like grounding, talking therapies, and gentle movement can help you feel
+                                    more at ease.</p>
+                                <button class="btn btn-pastel btn-toggle" data-target="anxiety">Read more</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Depression Card -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0">
+                        <div class="card h-100 shadow-sm border-0 mental-card">
                             <div class="card-body">
                                 <h3 class="card-title">Depression</h3>
-                                <p class="card-text">Explore gentle resources to support emotional well-being and find
+                                <p class="card-text short">Explore gentle resources to support emotional well-being and
+                                    find
                                     hope in healing.</p>
-                                <a href="#depression" class="btn btn-pastel">Read More</a>
+                                <p class="card-text more">Depression can make everyday life feel heavy. You’re not
+                                    alone—support is available. Small steps, connection, and kindness toward yourself
+                                    can begin the healing process.?</p>
+                                <button class="btn btn-pastel btn-toggle" data-target="depression">Read more</button>
                             </div>
                         </div>
                     </div>
@@ -136,6 +149,21 @@
             </p>
         </div>
     </footer>
+
+
+    <!--java-->
+    <script>
+        document.querySelectorAll('.btn-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card-body');
+                const moreText = card.querySelector('.card-text.more');
+                const isVisible = moreText.style.display === 'block';
+
+                moreText.style.display = isVisible ? 'none' : 'block';
+                button.textContent = isVisible ? 'Read more' : 'Read less';
+            });
+        });
+    </script>
 
 
     <!--Bootstrap js-->

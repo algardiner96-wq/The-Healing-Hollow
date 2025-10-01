@@ -89,6 +89,34 @@ main {
     color: #2f4f4f;
 }
 
+/* Card styles */
+.mental-card {
+    background-color: var(--color-bg-light);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: #3e5c48;
+}
+
+.card-text.more {
+    display: none;
+    margin-top: 0.5rem;
+    color: var(--color-text);
+    opacity: 0.9;
+}
+
+.btn-toggle {
+    background-color: var(--color-secondary);
+    color: #3e5c48;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
 /* Footer styles */
 footer {
     background-color: var(--color-primary);
