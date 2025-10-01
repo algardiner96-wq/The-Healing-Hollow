@@ -20,7 +20,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--font-secondary);
     color: #3e5c48;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -115,6 +116,15 @@ main {
     cursor: pointer;
     font-weight: 600;
     margin-top: 0.5rem;
+}
+
+/* Famous quotes styles */
+.text-primary {
+    color: #3e5c48 !important;
+}
+
+.quote-card {
+    background-color: var(--color-secondary);
 }
 
 /* Footer styles */
