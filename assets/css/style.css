@@ -149,6 +149,33 @@ img {
     border-radius: 50%;
 }
 
+/* contact styles */
+
+/* affirmation styles */
+.affirmations-list li {
+    border: 2px solid var(--color-heading);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--color-secondary);
+    color: #4a4a4a;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: background-color 0.3s ease;
+}
+
+.tips-list li {
+    border: 2px solid var(--color-heading);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--color-accent);
+    color: #4a4a4a;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: background-color 0.3s ease;
+}
+
 /* Footer styles */
 footer {
     background-color: var(--color-primary);
@@ -164,9 +191,16 @@ footer a[href^="tel"] {
     text-decoration: none;
     font-weight: 600;
 }
-
-footer a[href^="mailto"]:hover,
-footer a[href^="tel"]:hover {
+a[href^="mailto"]:hover,
+a[href^="tel"]:hover {
     color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.link {
+    color: var(--color-heading);
+}
+.link:hover {
+    color: var(--color-secondary);
     text-decoration: underline;
 }
