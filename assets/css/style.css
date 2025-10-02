@@ -157,3 +157,16 @@ footer {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+footer a[href^="mailto"],
+footer a[href^="tel"] {
+    color: var(--color-heading);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a[href^="mailto"]:hover,
+footer a[href^="tel"]:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
