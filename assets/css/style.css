@@ -43,6 +43,11 @@ h3 {
     font-weight: 700;
 }
 
+.navbar .nav-link.active {
+    color: #928683;
+    border-bottom: 2px solid #dfffe0;
+}
+
 .navbar .nav-link:hover {
     color: var(--color-accent);
     text-decoration: underline;
