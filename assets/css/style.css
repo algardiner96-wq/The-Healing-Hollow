@@ -25,6 +25,7 @@ h2,
 h3 {
     font-family: var(--font-secondary);
     color: var(--color-heading);
+    font-weight: 600;
 }
 
 .section {
@@ -69,8 +70,8 @@ main {
     justify-content: center;
     position: relative;
 }
-#header {
-    font-weight: 500;
+.heading {
+    font-weight: 600;
 }
 .header p {
     color: var(--color-text);
