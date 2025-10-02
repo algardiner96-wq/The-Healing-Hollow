@@ -9,13 +9,13 @@
     --color-secondary: #f3e8ff;
     --color-accent: #ffe4e1;
     --color-text: #4a4a4a;
-    --color-bg-light: #ffffff;
+    --color-bg: #fdf6f0;
 }
 
 /* Global Styles */
 body {
     font-family: var(--font-primary);
-    background-color: var(--color-bg-light);
+    background-color: var(--color-bg);
     color: var(--color-text);
 }
 
@@ -71,6 +71,11 @@ main {
 .header p {
     color: var(--color-text);
 }
+/* success page header adjustment */
+.thank-you {
+    margin-top: 80px;
+}
+
 .btn-pastel {
     background-color: var(--color-secondary);
     color: var(--color-text);
@@ -92,7 +97,7 @@ main {
 
 /* Card styles */
 .mental-card {
-    background-color: var(--color-bg-light);
+    background-color: white;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     padding: 1rem;
@@ -125,6 +130,11 @@ main {
 
 .quote-card {
     background-color: var(--color-secondary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.resource-card,
+.quote-card {
+    border: 2px solid #928683;
 }
 
 /* Footer styles */
@@ -132,4 +142,6 @@ footer {
     background-color: var(--color-primary);
     padding: 20px 0;
     box-shadow: 0 -4px 6px rgba(3, 53, 32, 0.7);
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
