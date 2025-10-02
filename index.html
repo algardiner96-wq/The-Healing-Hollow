@@ -86,7 +86,7 @@
             <h2 class="text-center mb-5" style="font-family: var(--font-secondary); font-weight: 600;">
                 Support for What You’re Feeling </h2>
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-center align-items-start">
                     <!-- Stress Card -->
                     <div class="col-md-4 mb-4 ">
                         <div class="card h-100 shadow-sm  mental-card">
@@ -162,7 +162,7 @@
                                 <p class="card-text fst-italic">"You are not your illness. You have an individual story
                                     to tell. You have a name, a history, a personality. Staying yourself is part of the
                                     battle."</p>
-                                <h4 class="card-title mt-3">- Julian Seifter</h4>
+                                <h4 class="card-title mt-3 mb-0">- Julian Seifter</h4>
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                                 <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
                                 <p class="card-text fst-italic">"There is hope, even when your brain tells you there
                                     isn’t."</p>
-                                <h4 class="card-title mt-3">- John Green</h4>
+                                <h4 class="card-title mt-3 mb-0">- John Green</h4>
                             </div>
                         </div>
                     </div>
@@ -223,13 +223,12 @@
             button.addEventListener('click', () => {
                 const card = button.closest('.card-body');
                 const moreText = card.querySelector('.card-text.more');
-                const isVisible = moreText.style.display === 'block';
-
-                moreText.style.display = isVisible ? 'none' : 'block';
-                button.textContent = isVisible ? 'Read more' : 'Read less';
+                moreText.classList.toggle('show');
+                button.textContent = moreText.classList.contains('show') ? 'Read less' : 'Read more';
             });
         });
     </script>
+
 
 
     <!--Bootstrap js-->
