@@ -10,6 +10,7 @@
     --color-accent: #ffe4e1;
     --color-text: #4a4a4a;
     --color-bg: #fdf6f0;
+    --color-heading: #3e5c48;
 }
 
 /* Global Styles */
@@ -23,8 +24,7 @@ h1,
 h2,
 h3 {
     font-family: var(--font-secondary);
-    color: #3e5c48;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: var(--color-heading);
 }
 
 .section {
@@ -59,7 +59,7 @@ main {
     background-position: center center;
     background-size: cover;
     background-color: rgba(74, 108, 92, 0.5);
-    min-height: 60vh;
+    /* min-height: 60vh; */
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -102,7 +102,7 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     padding: 1rem;
     margin-bottom: 1.5rem;
-    color: #3e5c48;
+    color: var(--color-heading);
 }
 
 .card-text.more {
@@ -114,7 +114,7 @@ main {
 
 .btn-toggle {
     background-color: var(--color-secondary);
-    color: #3e5c48;
+    color: var(--color-heading);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -125,7 +125,7 @@ main {
 
 /* Famous quotes styles */
 .text-primary {
-    color: #3e5c48 !important;
+    color: var(--color-heading) !important;
 }
 
 .quote-card {
