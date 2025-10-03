@@ -143,11 +143,34 @@ main {
 .text-primary {
     color: var(--color-heading) !important;
 }
-
 .quote-card {
     background-color: var(--color-secondary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
+
+.quote-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.quote-card i {
+    align-self: flex-start;
+}
+
+.quote-card .card-text {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.quote-card .card-title {
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 .resource-card,
 img {
     border: 2px solid #928683;
@@ -161,8 +184,6 @@ img {
 .logo > img {
     border-radius: 50%;
 }
-
-/* contact styles */
 
 /* affirmation styles */
 .affirmations-list li {
