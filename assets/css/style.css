@@ -60,7 +60,7 @@ main {
 
 /* Hero section styles */
 .hero {
-    background-image: url("/images/the-healing-hollow-hero.webp");
+    background-image: url("../images/the-healing-hollow-hero.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
